@@ -1,0 +1,21 @@
+:root {
+    /*Paletas de colores*/
+    /*Colores primarios */
+    --c-pri-litre: #FFFFFF;
+    --c-pri-litre: #000000;
+    /*Colores sucundarios */
+    --c-pri-litre: #F4F4F4;
+    /*Colores tercearios */
+    --c-pri-litre: #7BA6CC;
+    --c-pri-litre: #D7D185;
+    --c-pri-litre: #70CA9B;
+    --c-pri-litre: #C56A19;
+    --c-pri-litre: #173C13;  
+    --c-pri-litre: #013832;
+
+    /*Fuentes */
+    /*Titulo*/
+    --c-pri-litre: "Inter", sans-serif;
+    /*Textos*/
+    --c-pri-litre: "Inter", sans-serif;
+}
