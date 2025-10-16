@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Inicio - Yefferson Rentería Obregon */
+
+.inicio1{
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+    
+}
+
+.inicio2{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.ima-1{
+    width: 350px;
+    height: 200px;
+    margin-right: 20px;
+    text-align: center;
+}
+.ima-2{
+    width: 350px;
+    height: 200px;
+    margin-left: 100px;
+    text-align: center;
+}
+.ima-3{
+    width: 350px;
+    height: 200px;
+    margin-left: 100px;
+    text-align: center;
+}
+.ima-4{
+    width: 350px;
+    height: 200px;
+    margin-left: 100px;
+    text-align: center;
+}
+.ima-5{
+    width: 350px;
+    height: 200px;
+    margin-left: 100px;
+    text-align: center;
+}
+/* Para el header Yefferson rentería obregón*/
+.banner-nuqui{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(assent/img/capurgana-principal.webp);
+    padding: 0 45px;
+}
+.navbar-nuqui{
+    width: 95%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-acandi{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(assent/img/capurgana-principal.webp);
+    padding: 0 45px;
+}
+.navbar-acandi{
+    width: 95%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-bahia{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(assent/img/capurgana-principal.webp);
+    padding: 0 45px;
+}
+.navbar-bahia{
+    width: 95%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-capur{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(assent/img/capurgana-principal.webp);
+    padding: 0 45px;
+}
+.navbar-capur{
+    width: 95%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-jurado{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(assent/img/capurgana-principal.webp);
+    padding: 0 45px;
+}
+.navbar-jurado{
+    width: 95%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*El cuerpo Yefferson Rentería Obregón*/
+
+h1{
+    text-align: center;
+    padding: 10px;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+}
+p{
+    text-align: center;
+    padding: 15px;
+    
+}
+.conten{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.imagen-1{
+    width: 250px;
+    height: 150px;
+    margin-right: 50px;
+}
+.imagen-1 h2{
+    text-align: center;
+}
+.imagen-2{
+    width: 250px;
+    height: 150px;
+    margin-left: 50px;
+}
+.imagen-3{
+    width: 250px;
+    height: 150px;
+    margin-left: 50px;
+}
+.imagen-4{
+    width: 250px;
+    height: 150px;
+    margin-left: 50px;
+}
