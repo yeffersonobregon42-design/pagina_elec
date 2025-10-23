@@ -3,11 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Inicio - Yefferson Rentería Obregon */
+/*Pagina de inicio - Yefferson Rentería Obregon */
 
 .inicio1{
     display: flex;
-    justify-content: center;
+    justify-content: center; /*ubica el contenedor en el centro en este caso las imagenes*/
     padding: 35px;
     
 }
@@ -53,9 +53,9 @@
     width: 100%;
     height: 50vh;
     background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(img/nuqui2.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center center; /*Para poner en el centro la imagen*/
+    background-repeat: no-repeat; /*Para que no se repita la imagen*/
+    background-size: cover; /*Para que la imagen se vea mejor centrada y no se vea una parte de la imagen*/
     padding: 0 45px;
 }
 .navbar-nuqui{
@@ -90,7 +90,7 @@
     height: 50vh;
     background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url(img/ba.jpg);
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; /*Para no repetir las imagenes*/
     background-size: cover;
     padding: 0 45px;
 }
@@ -125,9 +125,9 @@
     width: 100%;
     height: 50vh;
     background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(img/jurado\ principal.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center center; /*Para poner en el centro la imagen*/
+    background-repeat: no-repeat; /*Para que no se repita la imagen*/
+    background-size: cover;/*Para que la imagen se vea mejor centrada y no se vea una parte de la imagen*/
     padding: 0 45px;
 }
 .navbar-jurado{
@@ -135,7 +135,7 @@
     margin: auto;
     padding: 35px 0;
     display: flex;
-    align-items: center;
+    align-items: center; /*Ubica en el centro los textos*/
     justify-content: space-between;
 }
 
@@ -155,9 +155,9 @@ p{
     
 }
 .conten{
-    display: flex;
+    display: flex; /*#Ubica las imagenes al lado*/
     justify-content: center;
-    text-align: center;
+    text-align: center; /*Alinear el texto al centro*/
 }
 .imagen-1{
     width: 250px;
