@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Pagina de inicio - Yefferson Rentería Obregon */
+
+.inicio1{
+    display: flex;
+    justify-content: center; /*ubica el contenedor en el centro en este caso las imagenes*/
+    padding: 35px;
+    
+}
+
+.inicio2{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.ima-1{
+    width: 350px;
+    height: 200px;
+    margin-right: 20px;
+    text-align: center;
+}
+.ima-2{
+    width: 350px;
+    height: 200px;
+    margin-left: 100px;
+    text-align: center;
+}
+.ima-3{
+    width: 350px;
+    height: 200px;
+    margin-left: 100px;
+    text-align: center;
+}
+.ima-4{
+    width: 350px;
+    height: 200px;
+    margin-left: 100px;
+    text-align: center;
+}
+.ima-5{
+    width: 350px;
+    height: 200px;
+    margin-left: 100px;
+    text-align: center;
+}
+/* Para el header Yefferson rentería obregón*/
+.banner-nuqui{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(img/nuqui2.jpg);
+    background-position: center center; /*Para poner en el centro la imagen*/
+    background-repeat: no-repeat; /*Para que no se repita la imagen*/
+    background-size: cover; /*Para que la imagen se vea mejor centrada y no se vea una parte de la imagen*/
+    padding: 0 45px;
+}
+.navbar-nuqui{
+    width: 95%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-acandi{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(img/acandi\ principal.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 45px;
+}
+.navbar-acandi{
+    width: 95%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-bahia{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url(img/ba.jpg);
+    background-position: center center;
+    background-repeat: no-repeat; /*Para no repetir las imagenes*/
+    background-size: cover;
+    padding: 0 45px;
+}
+.navbar-bahia{
+    width: 95%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-capur{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(img/capurgana-principal.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 45px;
+}
+.navbar-capur{
+    width: 95%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-jurado{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(img/jurado\ principal.jpg);
+    background-position: center center; /*Para poner en el centro la imagen*/
+    background-repeat: no-repeat; /*Para que no se repita la imagen*/
+    background-size: cover;/*Para que la imagen se vea mejor centrada y no se vea una parte de la imagen*/
+    padding: 0 45px;
+}
+.navbar-jurado{
+    width: 95%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center; /*Ubica en el centro los textos*/
+    justify-content: space-between;
+}
+
+/*El cuerpo Yefferson Rentería Obregón*/
+
+h1{
+    text-align: center;
+    padding: 10px;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+}
+p{
+    text-align: center;
+    padding: 15px;
+    
+}
+.conten{
+    display: flex; /*#Ubica las imagenes al lado*/
+    justify-content: center;
+    text-align: center; /*Alinear el texto al centro*/
+}
+.imagen-1{
+    width: 250px;
+    height: 150px;
+    margin-right: 50px;
+}
+.imagen-1 h2{
+    text-align: center;
+}
+.imagen-2{
+    width: 250px;
+    height: 150px;
+    margin-left: 50px;
+}
+.imagen-3{
+    width: 250px;
+    height: 150px;
+    margin-left: 50px;
+}
+.imagen-4{
+    width: 250px;
+    height: 150px;
+    margin-left: 50px;
+}
+
+
+.hero-section {
+    background-image: url(img/ballena.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 30px;
+    background: none; 
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+    filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.5));
+}
+
+.logo span {
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+
+.search-bar {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 60px;
+    padding: 10px;
+    border-radius: 15px;
+    background: none; 
+}
+
+
+.search-button {
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 12px 25px;
+    border-radius: 10px;
+    background-color: #000; 
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #222; 
+    transform: translateY(-2px);
+}
+
+.arrow-icon {
+    font-size: 12px;
+    color: #fff;
+}
