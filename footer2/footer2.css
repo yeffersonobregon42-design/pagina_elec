@@ -1,0 +1,146 @@
+:root {
+    --color-principal: #7ba6cc;
+    --color-secundario: #f4f4f4;
+    --color-texto: #080808;
+    --color-hover: #7080ca;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+/* ===== FOOTER ===== */
+.pie-pagina {
+    width: 100%;
+    background-color: var(--color-principal);
+    color: var(--color-texto);
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px 0;
+}
+
+
+.logo-con-texto {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    flex-wrap: nowrap; /* Mantiene el texto en una línea */
+}
+
+.logo-con-texto img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.nombre-logo {
+    font-size: 28px;
+    color: var(--color-texto);
+    font-weight: 700;
+    letter-spacing: 1px;
+    white-space: nowrap; /* Evita que el texto se parta */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Texto y estructura */
+.pie-pagina .box h2 {
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: var(--color-texto); 
+}
+
+.pie-pagina .box p {
+    margin-bottom: 10px;
+    color: var(--color-texto); 
+    font-size: 15px;
+}
+
+/* Redes sociales */
+.pie-pagina .red-social a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    color: var(--color-principal);
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+}
+
+/* Quitar rayas o bordes en íconos */
+.pie-pagina .red-social a:focus,
+.pie-pagina .red-social a:active,
+.pie-pagina .red-social a:hover {
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.pie-pagina .red-social a:hover {
+    background-color: var(--color-hover);
+    color: #fff;
+}
+
+/* Información de contacto */
+.contact-info {
+    margin-top: 15px;
+}
+
+.contact-info p {
+    margin: 8px 0;
+    color: var(--color-texto); 
+    font-size: 14px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: var(--color-texto); 
+}
+
+/* Grupo 2 */
+.pie-pagina .grupo-2 {
+    background-color: #4481b7;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.pie-pagina .grupo-2 small {
+    color: #ddd;
+    font-size: 14px;
+}
+
+/* Responsivo */
+@media screen and (max-width: 800px) {
+    .pie-pagina .grupo-1 {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .logo-con-texto {
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .nombre-logo {
+        margin-top: 10px;
+        font-size: 24px;
+        white-space: normal;
+    }
+}
