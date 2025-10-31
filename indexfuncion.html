@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuqui</title>
+    <link rel="stylesheet" href="assent/index.css">
+</head>
+
+<body>
+    
+    <div class="banner-nuqui">
+        <div class="navbar-nuqui">
+            <div style="display: flex; align-items: center;" class="menu">
+                <img style="height: 85px;" src="assent/img/logo2.png" class="logo">
+                <h3 style="color: white;" >Rutas del pacifico</h3>
+            </div>
+            <a style="text-decoration: none; color: white;" href="inicio.html">Inicio</a>
+        </div>
+    </div>
+
+    <h1>Nuqui</h1>
+    <p>
+        Nuquí es un paraíso natural en la costa pacífica de Colombia, ideal para el ecoturismo. Es famoso por el avistamiento de ballenas jorobadas (de julio a octubre), sus playas vírgenes, cascadas y selva exuberante.
+    </p>
+
+    <h2>Lugares turisticos</h2>
+    <div class="conten">
+        <div>
+            <h3>Cascadas</h3>
+            <img src="assent/img/cascadas.jpg" alt="" class="imagen-1">
+        </div>
+
+        <div>
+            <h3>Avistamiento de ballenas</h3>
+            <img src="assent/img/ballenas.jpeg" alt="" class="imagen-2">
+        </div>
+        
+
+
+        <div>
+            <h3>Sendero</h3>
+            <img src="assent/img/sendero.jpg" alt="" class="imagen-3">
+        </div>
+
+        <div>
+            <h3>Playa de Guachalito</h3>
+            <img src="assent/img/guachalito.jpg" alt="" class="imagen-4">
+        </div>
+    </div>
+
+    <h2>Hoteles</h2>
+    <div class="conten">
+        <div>
+            <h3>Ecohotel-Luzul</h3>
+            <img src="assent/img/econuqui.jpg" alt="" class="imagen-1">
+            <button class="hotel-btn" data-name="Ecohotel-Luzul" data-img="assent/img/econuqui.jpg" data-desc="Ecohotel Luzul ofrece alojamiento ecológico, comidas regionales y acceso a senderos y playas cercanas.">Ver hotel</button>
+        </div>
+
+        <div>
+            <h3>Palamas del pacifico</h3>
+            <img src="assent/img/palmasnuqui.jpg" alt="" class="imagen-1">
+            <button class="hotel-btn" data-name="Palmas del Pacífico" data-img="assent/img/palmasnuqui.jpg" data-desc="Palmas del Pacífico es un hospedaje con encanto local, cómodas habitaciones y servicios para tours de avistamiento de fauna marina.">Ver hotel</button>
+        </div>
+    </div>
+
+    <!-- Script añadido: funcionalidad de botones de hoteles (crea modal dinámico) -->
+    <script>
+        (function(){
+            const botones = document.querySelectorAll('.hotel-btn');
+            if(!botones) return;
+
+            botones.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const name = btn.dataset.name || 'Hotel';
+                    const desc = btn.dataset.desc || '';
+                    const img = btn.dataset.img || (btn.parentElement.querySelector('img') ? btn.parentElement.querySelector('img').src : '');
+
+                    // Overlay
+                    const overlay = document.createElement('div');
+                    overlay.setAttribute('role', 'dialog');
+                    overlay.setAttribute('aria-modal', 'true');
+                    overlay.style.position = 'fixed';
+                    overlay.style.inset = '0';
+                    overlay.style.background = 'rgba(0,0,0,0.6)';
+                    overlay.style.display = 'flex';
+                    overlay.style.alignItems = 'center';
+                    overlay.style.justifyContent = 'center';
+                    overlay.style.zIndex = '9999';
+
+                    // Modal
+                    const modal = document.createElement('div');
+                    modal.style.background = '#fff';
+                    modal.style.color = '#111';
+                    modal.style.padding = '18px';
+                    modal.style.borderRadius = '8px';
+                    modal.style.maxWidth = '92%';
+                    modal.style.width = '420px';
+                    modal.style.boxShadow = '0 10px 30px rgba(0,0,0,0.3)';
+                    modal.style.position = 'relative';
+
+                    modal.innerHTML = `
+                        <button aria-label="Cerrar" style="position:absolute;top:10px;right:10px;background:none;border:none;font-size:18px;cursor:pointer;">✕</button>
+                        <h3 style="margin-top:0;">${name}</h3>
+                        ${img ? `<img src="${img}" alt="${name}" style="width:100%;height:auto;border-radius:6px;margin:8px 0;">` : ''}
+                        <p style="margin:8px 0 12px 0;">${desc}</p>
+                        <p style="margin:0 0 6px 0;"><a href="#" style="color:#1a73e8;text-decoration:none;">Reservar / Más información</a></p>
+                    `;
+
+                    overlay.appendChild(modal);
+                    document.body.appendChild(overlay);
+
+                    // Close handlers
+                    const closeBtn = modal.querySelector('button');
+                    closeBtn.addEventListener('click', () => overlay.remove());
+                    overlay.addEventListener('click', (e) => { if(e.target === overlay) overlay.remove(); });
+                });
+            });
+        })();
+    </script>
+
+</body>
+</html>
