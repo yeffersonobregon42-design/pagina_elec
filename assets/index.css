@@ -2,60 +2,49 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all .5s ease-in-out;
 }
 /*Pagina de inicio - Yefferson Rentería Obregon */
 
-.inicio1{
-    display: flex;
-    justify-content: center; /*ubica el contenedor en el centro en este caso las imagenes*/
-    padding: 35px;
-    
+body{
+    width: 100%;
+    height: 100vh;
 }
 
-.inicio2{
+.inicio{
+    display: flex;
+    justify-content: center; /ubica el contenedor en el centro en este caso las imagenes/
+    padding: 35px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.inicio div{
     display: flex;
     justify-content: center;
-    padding: 15px;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.ima-1{
+.inicio img{
     width: 350px;
     height: 200px;
-    margin-right: 20px;
-    text-align: center;
 }
-.ima-2{
-    width: 350px;
-    height: 200px;
-    margin-left: 100px;
-    text-align: center;
+
+.inicio img:hover{
+    transform: scale(1.1);
 }
-.ima-3{
-    width: 350px;
-    height: 200px;
-    margin-left: 100px;
-    text-align: center;
-}
-.ima-4{
-    width: 350px;
-    height: 200px;
-    margin-left: 100px;
-    text-align: center;
-}
-.ima-5{
-    width: 350px;
-    height: 200px;
-    margin-left: 100px;
-    text-align: center;
-}
+
 /* Para el header Yefferson rentería obregón*/
 .banner-nuqui{
     width: 100%;
     height: 50vh;
     background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(img/nuqui2.jpg);
-    background-position: center center; /*Para poner en el centro la imagen*/
-    background-repeat: no-repeat; /*Para que no se repita la imagen*/
-    background-size: cover; /*Para que la imagen se vea mejor centrada y no se vea una parte de la imagen*/
+    background-position: center center; /Para poner en el centro la imagen/
+    background-repeat: no-repeat; /Para que no se repita la imagen/
+    background-size: cover; /Para que la imagen se vea mejor centrada y no se vea una parte de la imagen/
     padding: 0 45px;
 }
 .navbar-nuqui{
@@ -90,7 +79,7 @@
     height: 50vh;
     background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url(img/ba.jpg);
     background-position: center center;
-    background-repeat: no-repeat; /*Para no repetir las imagenes*/
+    background-repeat: no-repeat; /Para no repetir las imagenes/
     background-size: cover;
     padding: 0 45px;
 }
@@ -125,9 +114,9 @@
     width: 100%;
     height: 50vh;
     background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(img/jurado\ principal.jpg);
-    background-position: center center; /*Para poner en el centro la imagen*/
-    background-repeat: no-repeat; /*Para que no se repita la imagen*/
-    background-size: cover;/*Para que la imagen se vea mejor centrada y no se vea una parte de la imagen*/
+    background-position: center center; /Para poner en el centro la imagen/
+    background-repeat: no-repeat; /Para que no se repita la imagen/
+    background-size: cover;/Para que la imagen se vea mejor centrada y no se vea una parte de la imagen/
     padding: 0 45px;
 }
 .navbar-jurado{
@@ -135,54 +124,58 @@
     margin: auto;
     padding: 35px 0;
     display: flex;
-    align-items: center; /*Ubica en el centro los textos*/
+    align-items: center; /Ubica en el centro los textos/
     justify-content: space-between;
 }
 
-/*El cuerpo Yefferson Rentería Obregón*/
+/El cuerpo Yefferson Rentería Obregón/
 
-h1{
-    text-align: center;
-    padding: 10px;
-}
 h2{
     text-align: center;
-    padding: 20px;
-}
-p{
-    text-align: center;
-    padding: 15px;
-    
-}
-.conten{
-    display: flex; /*#Ubica las imagenes al lado*/
-    justify-content: center;
-    text-align: center; /*Alinear el texto al centro*/
-}
-.imagen-1{
-    width: 250px;
-    height: 150px;
-    margin-right: 50px;
-}
-.imagen-1 h2{
-    text-align: center;
-}
-.imagen-2{
-    width: 250px;
-    height: 150px;
-    margin-left: 50px;
-}
-.imagen-3{
-    width: 250px;
-    height: 150px;
-    margin-left: 50px;
-}
-.imagen-4{
-    width: 250px;
-    height: 150px;
-    margin-left: 50px;
 }
 
+.texto-dar-click{
+    font-size: 25px;
+}
+
+.div-texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    padding: 50px;
+}
+
+.div-texto p{
+    width: 70%;
+    font-size: 20px;
+}
+
+
+.conten{
+    display: flex; /#Ubica las imagenes al lado/
+    justify-content: center;
+    text-align: center; /Alinear el texto al centro/
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.conten img{
+    width: 250px;
+    height: 150px;
+}
+
+.conten div{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
 
 .hero-section {
     background-image: url(img/ballena.jpg);
@@ -237,150 +230,31 @@ p{
     background: none; 
 }
 
-
-.search-button {
+.hoteles, .destinos{
+    background-color: #000;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
     border: none;
-    font-family: inherit;
-    font-size: 16px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 12px 25px;
-    border-radius: 10px;
-    background-color: #000; 
-    color: #fff;
-    transition: all 0.3s ease;
-}
-
-.search-button:hover {
-    background-color: #222; 
-    transform: translateY(-2px);
-}
-
-.arrow-icon {
-    font-size: 12px;
-    color: #fff;
-}
-
-
-body {
-    margin: 0;
-    font-family: "Inter", sans-serif;
-}
-
-/* ===== FOOTER ===== */
-.pie-pagina {
-    width: 100%;
-    background-color: #7ba6cc;
-    color: #080808;
-}
-
-.pie-pagina .grupo-1 {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    padding: 10px 0;
-    text-align: center;
-}
-
-
-.logo-con-texto {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    text-decoration: none;
-    flex-wrap: nowrap; /* Mantiene el texto en una línea */
-}
-
-.logo-con-texto img {
-    width: 120px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.nombre-logo {
-    font-size: 22px;
-    color: #080808;
-    font-weight: 700;
-    letter-spacing: 1px;
-    white-space: nowrap; /* Evita que el texto se parta */
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-/* Texto y estructura */
-.pie-pagina .box h2 {
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: #080808; 
-}
-
-.pie-pagina .box p {
-    margin-bottom: 10px;
-    color: #080808; 
+    appearance: none;
     font-size: 15px;
+    cursor: pointer;
+    transition: all .5s;
 }
 
-/* Redes sociales */
-.pie-pagina .red-social a {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    margin-right: 10px;
-    background-color: #ffffff;
-    color: #7ba6cc;
-    border-radius: 50%;
-    text-align: center;
-    transition: 0.3s;
-    font-size: 18px;
-    text-decoration: none;
-    border: none;
+.hoteles{
+    padding-left: 50px;
 }
 
-/* Quitar rayas o bordes en íconos */
-.pie-pagina .red-social a:focus,
-.pie-pagina .red-social a:active,
-.pie-pagina .red-social a:hover {
+.destinos{
+    padding-left: 25px;
+}
+
+select:hover{
+    background-color: #000000cb;
+}
+
+select:focus{
     outline: none;
-    border: none;
-    text-decoration: none;
 }
-
-.pie-pagina .red-social a:hover {
-    background-color: #7080ca;
-    color: #fff;
-}
-
-/* Información de contacto */
-.contact-info {
-    margin-top: 15px;
-}
-
-.contact-info p {
-    margin: 8px 0;
-    color: #080808; 
-    font-size: 14px;
-}
-
-.contact-info i {
-    margin-right: 10px;
-    color: #080808;
-}
-
-/* Grupo 2 */
-.pie-pagina .grupo-2 {
-    background-color: #4481b7;
-    text-align: center;
-    padding: 15px 10px;
-}
-
-.pie-pagina .grupo-2 small {
-    color: #ddd;
-    font-size: 14px;
-}
-
