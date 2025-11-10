@@ -2,49 +2,60 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all .5s ease-in-out;
 }
 /*Pagina de inicio - Yefferson Rentería Obregon */
 
-body{
-    width: 100%;
-    height: 100vh;
-}
-
-.inicio{
+.inicio1{
     display: flex;
-    justify-content: center; /ubica el contenedor en el centro en este caso las imagenes/
+    justify-content: center; /*ubica el contenedor en el centro en este caso las imagenes*/
     padding: 35px;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 30px;
+    
 }
 
-.inicio div{
+.inicio2{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
+    padding: 15px;
 }
 
-.inicio img{
+.ima-1{
     width: 350px;
     height: 200px;
+    margin-right: 20px;
+    text-align: center;
 }
-
-.inicio img:hover{
-    transform: scale(1.1);
+.ima-2{
+    width: 350px;
+    height: 200px;
+    margin-left: 100px;
+    text-align: center;
 }
-
+.ima-3{
+    width: 350px;
+    height: 200px;
+    margin-left: 100px;
+    text-align: center;
+}
+.ima-4{
+    width: 350px;
+    height: 200px;
+    margin-left: 100px;
+    text-align: center;
+}
+.ima-5{
+    width: 350px;
+    height: 200px;
+    margin-left: 100px;
+    text-align: center;
+}
 /* Para el header Yefferson rentería obregón*/
 .banner-nuqui{
     width: 100%;
     height: 50vh;
     background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(img/nuqui2.jpg);
-    background-position: center center; /Para poner en el centro la imagen/
-    background-repeat: no-repeat; /Para que no se repita la imagen/
-    background-size: cover; /Para que la imagen se vea mejor centrada y no se vea una parte de la imagen/
+    background-position: center center; /*Para poner en el centro la imagen*/
+    background-repeat: no-repeat; /*Para que no se repita la imagen*/
+    background-size: cover; /*Para que la imagen se vea mejor centrada y no se vea una parte de la imagen*/
     padding: 0 45px;
 }
 .navbar-nuqui{
@@ -79,7 +90,7 @@ body{
     height: 50vh;
     background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url(img/ba.jpg);
     background-position: center center;
-    background-repeat: no-repeat; /Para no repetir las imagenes/
+    background-repeat: no-repeat; /*Para no repetir las imagenes*/
     background-size: cover;
     padding: 0 45px;
 }
@@ -114,9 +125,9 @@ body{
     width: 100%;
     height: 50vh;
     background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(img/jurado\ principal.jpg);
-    background-position: center center; /Para poner en el centro la imagen/
-    background-repeat: no-repeat; /Para que no se repita la imagen/
-    background-size: cover;/Para que la imagen se vea mejor centrada y no se vea una parte de la imagen/
+    background-position: center center; /*Para poner en el centro la imagen*/
+    background-repeat: no-repeat; /*Para que no se repita la imagen*/
+    background-size: cover;/*Para que la imagen se vea mejor centrada y no se vea una parte de la imagen*/
     padding: 0 45px;
 }
 .navbar-jurado{
@@ -124,58 +135,54 @@ body{
     margin: auto;
     padding: 35px 0;
     display: flex;
-    align-items: center; /Ubica en el centro los textos/
+    align-items: center; /*Ubica en el centro los textos*/
     justify-content: space-between;
 }
 
-/El cuerpo Yefferson Rentería Obregón/
+/*El cuerpo Yefferson Rentería Obregón*/
 
+h1{
+    text-align: center;
+    padding: 10px;
+}
 h2{
     text-align: center;
+    padding: 20px;
 }
-
-.texto-dar-click{
-    font-size: 25px;
-}
-
-.div-texto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 40px;
+p{
     text-align: center;
-    padding: 50px;
+    padding: 15px;
+    
 }
-
-.div-texto p{
-    width: 70%;
-    font-size: 20px;
-}
-
-
 .conten{
-    display: flex; /#Ubica las imagenes al lado/
+    display: flex; /*#Ubica las imagenes al lado*/
     justify-content: center;
-    text-align: center; /Alinear el texto al centro/
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    text-align: center; /*Alinear el texto al centro*/
 }
-
-.conten img{
+.imagen-1{
     width: 250px;
     height: 150px;
+    margin-right: 50px;
+}
+.imagen-1 h2{
+    text-align: center;
+}
+.imagen-2{
+    width: 250px;
+    height: 150px;
+    margin-left: 50px;
+}
+.imagen-3{
+    width: 250px;
+    height: 150px;
+    margin-left: 50px;
+}
+.imagen-4{
+    width: 250px;
+    height: 150px;
+    margin-left: 50px;
 }
 
-.conten div{
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    gap: 20px;
-}
 
 .hero-section {
     background-image: url(img/ballena.jpg);
@@ -230,8 +237,8 @@ h2{
     background: none; 
 }
 
-/*Luisa Fernanda Mosquera Hurtado y Sarith Cuesta Renteria*/
 
+/*Luisa Fernanda Mosquera Hurtado y Sarith Cuesta Renteria*/
 .hoteles, .destinos{
     background-color: #000;
     color: white;
